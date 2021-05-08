@@ -1,13 +1,73 @@
 .navigation{
   display :flex;
   justify-content: space-between;
+  
+
+  @include respond(phone){
+    .navigation{
+      position: relative;
+
+      &__checkbox{
+display: none;
+  }
+  &__button{
+background-color: $color-white;
+  height:7rem;
+  width: 7rem;
+  position: absolute;
+  top:4.9rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba($color-black,.1);
+  text-align: center;
+  cursor: pointer;
+  }
+  &__background{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:5rem;
+    right: 6.5rem;
+  }
+  &__icon{
+     position: relative;
+    margin-top: 3.5rem;
+
+
+    &,
+    &:before,
+    &:after{
+      width: 3rem;
+      height: 2px;
+      background-color:$color-primary;
+      display: inline-block;
+    }
+    &:before,
+    &:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+
+      
+      
+    }
+    &::before{top:-.8rem};
+    &::after{top:.8rem};
+  }
 }
 
+    }
+  }
+  
 .logo-color-filled{
   height: 20rem;
   width: 20rem;
   
-  padding: 5rem 3rem 11rem 13rem;
+  padding: 6rem 3rem 9rem 13rem;
   
 }
 .navigation-nav-bar{
@@ -17,6 +77,10 @@
   list-style: none;
   margin-top: 5rem;
    font-size:1.8rem ;
+
+   @include respond(phone){
+     display: none;
+   }
   
 }
 

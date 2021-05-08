@@ -11,9 +11,18 @@ body {
 .header{
   padding-top: 0rem;
   padding-left: 10rem;
-  
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
+
+  @include respond(phone){
+    display:flex;
+    flex-direction:column;
+    padding-right: 2rem;
+
+  }
+  
 
 }
 .header-part-1{
@@ -25,10 +34,16 @@ body {
 }
 
 .header-text-1{
-  color: #000;
+  color: $color-black;
   font-size: 5rem;
   font-weight: 600;
   white-space: nowrap;
+   @include respond(phone){
+    font-size: 3.5rem;
+
+  }
+  
+
 }
 .header-text-Zosime{
  
@@ -42,15 +57,49 @@ body {
   color:$color-gray-6;
   font-size: 3.3rem;
   font-weight: 400;
+  @include respond(phone){
+    font-size: 2rem;
+    font-weight: 500;
+
+  }
+  
+
 }
 .header-text-3{
   color:$color-gray-7;
   font-size: 2rem;
   font-weight: 400;
   margin-top: .5rem;
+
 }
 .hero-img{
   width:70%;
   height:70%;
+ @include respond(phone){
+    margin-top: 6rem;
+    padding-left: 5rem;
+  
+
+  }
+  
+
 }
+
+.small-circle{
+  
+  width: 2.5rem;
+    height: 2.5rem;
+    
+    position: absolute;
+    top:23rem;
+    left: 15rem;
+    border-radius:10rem ;
+    background-color: #2ab1db;
+    animation:rotate 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    //border-radius: 100px;
+    z-index: -9999;
+}
+
 
