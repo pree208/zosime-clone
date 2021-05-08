@@ -1,0 +1,36 @@
+.navigation{
+  display :flex;
+  justify-content: space-between;
+}
+
+.logo-color-filled{
+  height: 200px;
+  width: 200px;
+  
+  padding: 50px 30px 110px 130px;
+  
+}
+.navigation-nav-bar{
+  display: flex;
+  align-items: center;
+  margin-right:150px ;
+  list-style: none;
+  margin-top: 50px;
+   font-size:1.8rem ;
+  
+}
+
+.nav-link{
+  margin-right: 40px;
+  margin-left: 10px;
+  text-decoration: none;
+  
+
+  
+
+}
+li a{
+  text-decoration: none;
+  color:$color-gray-7;
+}
+

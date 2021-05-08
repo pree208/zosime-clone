@@ -1,0 +1,56 @@
+body {
+    font-family:'Barlow', sans-serif; ;
+    font-weight: 500;
+    
+    line-height: 1.3;
+    color:$color-gray-7;
+    box-sizing: border-box;
+    
+}
+
+.header{
+  padding-top: 0px;
+  padding-left: 100px;
+  
+  display: flex;
+  justify-content: space-between;
+
+}
+.header-part-1{
+  margin-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header-text-1{
+  color: #000;
+  font-size: 50px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.header-text-Zosime{
+ 
+  background-image: linear-gradient(to right ,$color-primary,$color-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;;
+  color: transparent;
+}
+
+.header-text-2{
+  color:$color-gray-6;
+  font-size: 33px;
+  font-weight: 400;
+}
+.header-text-3{
+  color:$color-gray-7;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.hero-img{
+  width:70%;
+  height:70%;
+}
+

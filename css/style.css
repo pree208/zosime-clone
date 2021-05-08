@@ -1,0 +1,195 @@
+/* COLORS */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-color-filled {
+  height: 200px;
+  width: 200px;
+  padding: 50px 30px 110px 130px;
+}
+
+.navigation-nav-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+  list-style: none;
+  margin-top: 50px;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  margin-right: 40px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #111;
+}
+
+.u-upper {
+  text-transform: uppercase;
+}
+
+.u-image-full-size {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.u-mb-large {
+  margin-bottom: 7.5rem !important;
+}
+
+.u-mb-medium {
+  margin-bottom: 5.5rem !important;
+}
+
+.u-mb-small {
+  margin-bottom: 3.5rem !important;
+}
+
+.u-mt-large {
+  margin-top: 7.5rem !important;
+}
+
+.u-mt-medium {
+  margin-top: 5.5rem !important;
+}
+
+.u-mt-small {
+  margin-top: 3.5rem !important;
+}
+
+.u-iblock {
+  display: inline-block;
+}
+
+.u-margin-tb-xl {
+  margin-top: 20rem !important;
+  margin-bottom: 20rem !important;
+}
+
+.u-margin-tb-medium {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
+}
+
+.u-margin-tb-small {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+/*
+  DARK THEME / LIGHT THEME styling
+  $scheme = dark | light
+*/
+/* MEDIA QUERY MANAGER
+   *
+   * 0 - 600px => phone
+   * 600px - 900px => tablet portrait
+   * 900px - 1200px => tablet landscape
+   * 1200px+ => desktop
+   */
+/*
+   * CHOICES:
+   * phone, tab-port, tab-lan, desk
+   */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #111;
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 0px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-part-1 {
+  margin-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text-1 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header-text-Zosime {
+  background-image: linear-gradient(to right, #82c076, #2ab1db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header-text-2 {
+  color: #424242;
+  font-size: 33px;
+  font-weight: 400;
+}
+
+.header-text-3 {
+  color: #111;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.hero-img {
+  width: 70%;
+  height: 70%;
+}
