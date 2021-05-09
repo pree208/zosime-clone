@@ -309,3 +309,35 @@ body {
     transform: translateY(2rem);
   }
 }
+
+.section-project {
+  margin-left: 12.3rem;
+  font-size: 2.6rem;
+  margin-bottom: 10rem;
+}
+
+.project-heading-1 {
+  padding-left: 45rem;
+  padding-top: 8rem;
+}
+
+.project-color {
+  color: #2ab1db;
+}
+
+.project-img {
+  display: flex;
+}
+
+.project-img-projects-1 {
+  height: 29rem;
+  width: 25rem;
+  margin-right: 3rem;
+  padding-top: 7rem;
+  border-radius: 1rem;
+  transition: all .2s;
+}
+
+.project-img-projects-1:hover {
+  transform: translateY(-1.5rem) scale(1.08);
+}
