@@ -1,0 +1,63 @@
+.popup{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  &:target{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+  }
+  &-title {
+    font-size: 20rem;
+    position: absolute;
+    right: -1%;
+    top: 60%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.1);}
+  &-close{
+    &:link,
+    &:visited{
+      color:$color-secondary;
+      position: absolute;
+      top: 2.5rem;
+      right:3.5rem;
+      font-size: 5rem;
+      font-weight: 400;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+  &-head{
+    font-weight: 300;
+    padding-left: 0rem;
+  }
+
+  &-content{
+    @include absCenter;
+    width: 60%;
+    background-color: #148786;
+     border-radius: 3px;
+    height: 45rem;
+      box-shadow: 0 2rem 4rem rgba($color-black,.2);
+      color: $color-white;
+      padding: 10rem 5rem;
+      padding-left: 8rem;
+  }
+  &-text1{
+    line-height: 1.5;
+    font-weight: 300;
+    
+  }
+&-text2{
+  margin-top: 2rem;
+  font-weight:200 ;
+}
+}
+

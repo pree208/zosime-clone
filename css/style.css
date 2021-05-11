@@ -415,17 +415,24 @@ body {
   width: 27rem;
 }
 
+.section-pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-right: 0rem;
+  margin-left: 12.3rem;
+}
+
 .pricing-container {
   background-color: #148786;
   height: 52rem;
   width: 28rem;
-  margin-right: 7rem;
-  margin-left: 12.3rem;
   border-radius: 2rem;
-  margin-top: 6rem;
   color: #fff;
-  display: flex;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.pricing-container:hover {
+  transform: translateY(1.5rem) scale(1.08);
 }
 
 .pricing-container-2 {
@@ -436,8 +443,11 @@ body {
   margin-left: 12.3rem;
   border-radius: 2rem;
   color: #fff;
-  display: flex;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.pricing-container-2:hover {
+  transform: translateY(1.5rem) scale(1.08);
 }
 
 .pricing-container-3 {
@@ -448,8 +458,11 @@ body {
   margin-left: 12.3rem;
   border-radius: 2rem;
   color: #fff;
-  display: flex;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.pricing-container-3:hover {
+  transform: translateY(1.5rem) scale(1.08);
 }
 
 .pricing-card--banner {
@@ -459,6 +472,8 @@ body {
 .pricing-card--banner-img {
   height: 18rem;
   width: 28rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 .pricing-card--banner-word {
@@ -549,10 +564,82 @@ body {
 
 .btn-primary:hover, .btn-primary-2:hover, .btn-primary-3:hover {
   background-color: #fff;
-  color: #000 !important;
 }
 
 .showmore {
   color: #fff;
   text-decoration: none;
+}
+
+.showmore:hover {
+  color: black !important;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s;
+}
+
+.popup-title {
+  font-size: 20rem;
+  position: absolute;
+  right: -1%;
+  top: 60%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.popup-close:link, .popup-close:visited {
+  color: #2ab1db;
+  position: absolute;
+  top: 2.5rem;
+  right: 3.5rem;
+  font-size: 5rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.popup-head {
+  font-weight: 300;
+  padding-left: 0rem;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: #148786;
+  border-radius: 3px;
+  height: 45rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10rem 5rem;
+  padding-left: 8rem;
+}
+
+.popup-text1 {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.popup-text2 {
+  margin-top: 2rem;
+  font-weight: 200;
 }
