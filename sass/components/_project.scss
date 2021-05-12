@@ -2,6 +2,10 @@
   margin-left: 12.3rem;
   
   margin-bottom: 10rem;
+@include respond(tab-land){
+  margin-left: 1rem;
+}
+ 
 }
 
 .project-heading-1{
@@ -19,6 +23,7 @@
 
 .project-img{
   display: flex;
+   
   
 }
 .project-img-projects-1{
@@ -32,5 +37,8 @@
   &:hover{
     transform: translateY(-1.5rem) scale(1.08) ;
   }
-  
+  @include respond(tab-land){
+    height: 27rem;
+    width: 23rem;
+  }
 }

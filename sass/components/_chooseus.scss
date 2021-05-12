@@ -13,6 +13,8 @@
   justify-content: space-between;
   margin-top: 6rem;
 
+
+
  
 }
 
@@ -29,20 +31,39 @@
 
 .chooseus-img-1{
   padding-left: 15rem;
+  @include respond(tab-land){
+    padding-left: 5rem;
+  }
 }
 .chooseus-img-2{
   padding-right: 15rem;
+
+  @include respond(tab-land){
+    padding-right: 5rem;
+  }
 }
 .chooseus-text{
   margin-left: 15rem;
   line-height: 2;
   animation: moveInRight 3s ;
+
+  @include respond(tab-land){
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 3rem;
+  }
 }
 .chooseus-text-2{
   margin-right: 15rem;
   line-height: 2;
   text-align: right;
   animation: moveInLeft 3s;
+
+  @include respond(tab-land){
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-right: 3rem;
+  }
 }
 .chooseus-image1{
    

@@ -2,8 +2,11 @@
   display: flex;
   justify-content: space-between;
    margin-top: 6rem;
-   margin-right: 0rem;
-  margin-left: 12.3rem;
+  
+ 
+  margin-bottom: 6rem;
+
+ 
   
   
 }
@@ -12,12 +15,16 @@
   background-color: #148786;
   height: 52rem;
   width: 28rem;
-  
+   margin-left: 12.3rem;
   border-radius: 2rem;
+
+   @include respond(tab-land){
+    margin-left: 2rem;
+  }
  
   color: $color-white;
    &:hover{
-    transform: translateY(1.5rem) scale(1.08) ;
+    transform: translateY(1rem) scale(1.03) ;
   }
  
   
@@ -26,16 +33,20 @@
     background-color: #04223e;
   height: 52rem;
   width: 28rem;
-  margin-right: 7rem;
-  margin-left: 12.3rem;
+  
+ 
   border-radius: 2rem;
   
   
   color: $color-white;
 
    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25) ;
+
+   @include respond(tab-land){
+    margin-left: 6rem;
+  }
     &:hover{
-    transform: translateY(1.5rem) scale(1.08) ;
+    transform: translateY(1rem) scale(1.03) ;
   }
   }
 
@@ -43,15 +54,18 @@
     background-color: #0b0a18;
   height: 52rem;
   width: 28rem;
-  margin-right: 7rem;
-  margin-left: 12.3rem;
+  margin-right: 12rem;
+  
   border-radius: 2rem;
   
   color: $color-white;
   
    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25) ;
+   @include respond(tab-land){
+    margin-left: 6rem;
+  }
     &:hover{
-    transform: translateY(1.5rem) scale(1.08) ;
+    transform: translateY(1rem) scale(1.03) ;
   }
   
   }
@@ -170,3 +184,43 @@ font-weight: 500;
   }
 }
 
+.popup-bottom{
+  height: 13rem;
+  width: 110rem;
+  background-image: linear-gradient(to right,
+  #fff,$color-primary,$color-secondary);
+  margin-left: 12.3rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, .3);
+display: flex;
+justify-content: space-between;
+
+@include respond(tab-land){
+  margin-left: 2rem;
+  width: 95rem;
+}
+&-left{
+  display: flex;
+
+  &-img{
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem 3rem;
+  }
+  &-content{
+    margin: 2rem 2rem;
+    line-height: 1.7;
+  }
+}
+&-right{
+  color:$color-white;
+   margin: 5rem 3rem;
+   text-align: right;
+}
+
+
+}
+.pricing-end{
+text-decoration: none;
+color: black;
+}

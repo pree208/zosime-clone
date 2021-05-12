@@ -1,7 +1,9 @@
 .navigation{
   display :flex;
   justify-content: space-between;
-  
+  &__checkbox{
+    display: none;
+  }
 
   @include respond(phone){
     .navigation{
@@ -64,19 +66,26 @@ background-color: $color-white;
   }
   
 .logo-color-filled{
-  height: 20rem;
-  width: 20rem;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 5rem;
+  left: 12.5rem;
   
-  padding: 6rem 3rem 9rem 13rem;
+ 
   
 }
 .navigation-nav-bar{
   display: flex;
   align-items: center;
-  margin-right:150px ;
+  margin-right:20px ;
   list-style: none;
   margin-top: 5rem;
    font-size:1.8rem ;
+
+   @include respond(tab-land){
+     margin-right: 0;
+   }
 
    @include respond(phone){
      display: none;
