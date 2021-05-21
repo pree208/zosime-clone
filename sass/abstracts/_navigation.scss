@@ -1,15 +1,18 @@
 .navigation{
+  margin-left: $margin-left-body;
+  margin-right: $margin-right-body;
+  margin-top: $margin-top-body;
   display :flex;
   justify-content: space-between;
   position: relative;
-  display: none;
+  //display: none;
+
+
   &__checkbox{
     display: none;
   }
 
-  
-
-  @include respond(phone){
+   @include respond(phone){
     .navigation{
       position: relative;
 
@@ -20,7 +23,7 @@ display: none;
   
   &__icon{
      position: relative;
-    margin-top: 3.5rem;
+   // margin-top: 3.5rem;
     
 
 
@@ -33,16 +36,10 @@ display: none;
       background-color:$color-primary;
       display: inline-block;
       position: absolute;
-      right:-20rem;
-      top:3.5rem;
+      right:2rem;
+      top:2.2rem;
 
-       @media only screen and (max-width:450px){
        
-     position: absolute;
-      right:-30rem;
-      top:3.5rem;
-     
-   }
     }
     &:before,
     &:after{
@@ -62,109 +59,35 @@ display: none;
 }
 
     }
-  }
-  
-.logo-color-filled{
-  height: 3rem;
-  width: 3rem;
-  position: absolute;
-  top: 5rem;
-  left: 12.5rem;
-
-  @media only screen and (max-width:1200px){
-    position: absolute;
-  top: 5rem;
-  left: 9rem;
-    
-   }
-  
-   @media only screen and (max-width:800px){
-    position: absolute;
-  top: 5rem;
-  left: 8rem;
-
-    
-   }
-
-   @media only screen and (max-width:600px){
-     height: 4.5rem;
-     width: 4.5rem;
-    position: absolute;
-  top: 5rem;
-  left: 11rem;
-
-    
-   }
-  
 }
+  
+
+.logo-color-filled{
+  height: 4rem;
+  width: 4rem;
+ 
+}
+
 .navigation-nav-bar{
   display: flex;
+  
   align-items: center;
-  margin-right:2rem ;
+  
   list-style: none;
-  margin-top: 5rem;
+  
    font-size:1.8rem ;
-@media only screen and (max-width:600px){
+  
+   @media only screen and (max-width:600px){
   display: none;
 }
-   
-     
-   @media only screen and (max-width:800px){
-    position: absolute;
-  top: .7rem;
-  left: 65rem;
-  word-wrap: none;
-  margin-bottom: 5rem;
+  }
+
+   .nav-link{
     
-   } 
-   
-   
-
-
-   &:last-child{
-     margin-right: 6rem;
-
-      @media only screen and (max-width:1200px){
-     margin-right:0rem;
-   }
-  
-   @media only screen and (max-width:800px){
-    margin-right: 0;
-    
-   }
-
-   }
-
-
-}
-
-
-.nav-link{
   margin-right: 4rem;
-  margin-left: 1rem;
-  text-decoration: none;
-  
-@media only screen and (max-width:800px){
-       
-     &:last-child{
-     margin-right: 0;
-     margin-left: 0;
-   }}
-  
-
-}
-li a{
-  text-decoration: none;
-  color:$color-gray-7;
-@media only screen and (max-width:800px){
-    white-space: nowrap;
-    
-   }
-
+ // margin-left: 1rem;
 }
 
-
-
-
-
-
+  li a{
+  text-decoration: none;
+  color:$color-gray-7;}
