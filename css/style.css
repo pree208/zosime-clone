@@ -562,69 +562,68 @@ body {
 }
 
 .section-card {
-  display: none;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
 }
 
 .section-pricing {
   display: flex;
   justify-content: space-between;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
   flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .pricing-container {
+  width: 25rem;
   background-color: #148786;
-  height: 52rem;
-  width: 28rem;
-  margin-left: 12.3rem;
   border-radius: 2rem;
   color: #fff;
-}
-
-@media only screen and (max-width: 75em) {
-  .pricing-container {
-    margin-left: 2rem;
-  }
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
 }
 
 .pricing-container:hover {
   transform: translateY(1rem) scale(1.03);
 }
 
+@media only screen and (max-width: 56.25em) {
+  .pricing-container {
+    margin-bottom: 3rem;
+  }
+}
+
 .pricing-container-2 {
+  width: 25rem;
   background-color: #04223e;
-  height: 52rem;
-  width: 28rem;
   border-radius: 2rem;
   color: #fff;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
-}
-
-@media only screen and (max-width: 75em) {
-  .pricing-container-2 {
-    margin-left: 6rem;
-  }
 }
 
 .pricing-container-2:hover {
   transform: translateY(1rem) scale(1.03);
 }
 
+@media only screen and (max-width: 56.25em) {
+  .pricing-container-2 {
+    margin-bottom: 3rem;
+  }
+}
+
 .pricing-container-3 {
+  width: 25rem;
   background-color: #0b0a18;
-  height: 52rem;
-  width: 28rem;
-  margin-right: 12rem;
   border-radius: 2rem;
   color: #fff;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
-}
-
-@media only screen and (max-width: 75em) {
-  .pricing-container-3 {
-    margin-left: 6rem;
-  }
 }
 
 .pricing-container-3:hover {
@@ -636,16 +635,20 @@ body {
 }
 
 .pricing-card--banner-img {
-  height: 18rem;
+  height: 15rem;
   width: 100%;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
 }
 
+.pricing-card--banner-img:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .pricing-card--banner-word {
   position: absolute;
-  top: 11rem;
-  left: 12rem;
+  top: 10rem;
+  left: 10rem;
   color: #fff;
   font-size: 3rem;
   font-weight: 500;
@@ -653,8 +656,8 @@ body {
 
 .pricing-card--banner-word-2 {
   position: absolute;
-  top: 11rem;
-  left: 7.5rem;
+  top: 10rem;
+  left: 7rem;
   color: #fff;
   font-size: 3rem;
   font-weight: 500;
@@ -662,37 +665,30 @@ body {
 
 .pricing-card--banner-word-3 {
   position: absolute;
-  top: 11rem;
-  left: 9rem;
+  top: 10rem;
+  left: 8rem;
   color: #fff;
   font-size: 3rem;
   font-weight: 500;
 }
 
 .pricing_card--content {
-  text-align: left;
-}
-
-.pricing__item {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .fas {
-  margin-right: 1.5rem;
-  margin-left: 3rem;
-  font-size: 1.7rem;
+  margin-right: .5rem;
 }
 
-.pricing-card-content-1 {
-  text-align: center;
-  font-size: 1.2rem;
+.pricing__detail {
+  list-style: none;
 }
 
-.pricing-card-content-2 {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 400;
+.pricing__item {
+  margin: 2rem;
 }
 
 .btn-primary {
@@ -704,6 +700,7 @@ body {
   margin-left: 4rem;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .btn-primary-2 {
@@ -715,6 +712,7 @@ body {
   margin-left: 4rem;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .btn-primary-3 {
@@ -726,6 +724,7 @@ body {
   margin-left: 4rem;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .btn-primary:hover, .btn-primary-2:hover, .btn-primary-3:hover {
@@ -739,51 +738,6 @@ body {
 
 .showmore:hover {
   color: black !important;
-}
-
-.popup-bottom {
-  height: 13rem;
-  width: 100%;
-  background-image: linear-gradient(to right, #fff, #82c076, #2ab1db);
-  margin-left: 12.3rem;
-  border-radius: 2rem;
-  box-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: space-between;
-  display: none;
-}
-
-@media only screen and (max-width: 75em) {
-  .popup-bottom {
-    margin-left: 2rem;
-    width: 95rem;
-  }
-}
-
-.popup-bottom-left {
-  display: flex;
-}
-
-.popup-bottom-left-img {
-  height: 10rem;
-  width: 10rem;
-  margin: 2rem 3rem;
-}
-
-.popup-bottom-left-content {
-  margin: 2rem 2rem;
-  line-height: 1.7;
-}
-
-.popup-bottom-right {
-  color: #fff;
-  margin: 5rem 3rem;
-  text-align: right;
-}
-
-.pricing-end {
-  text-decoration: none;
-  color: black;
 }
 
 .popup {
