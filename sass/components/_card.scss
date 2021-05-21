@@ -1,3 +1,8 @@
+
+.section-card{
+  display: none;
+}
+
 .section-pricing{
   display: flex;
   justify-content: space-between;
@@ -5,6 +10,8 @@
   
  
   margin-bottom: 6rem;
+  flex-wrap: wrap;
+  //display: none;
 
  
   
@@ -77,7 +84,7 @@
   position: relative;
   &-img{
   height: 18rem;
-  width: 28rem;
+  width: 100%;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
   
@@ -186,7 +193,7 @@ font-weight: 500;
 
 .popup-bottom{
   height: 13rem;
-  width: 110rem;
+  width: 100%;
   background-image: linear-gradient(to right,
   #fff,$color-primary,$color-secondary);
   margin-left: 12.3rem;
@@ -194,6 +201,7 @@ font-weight: 500;
   box-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, .3);
 display: flex;
 justify-content: space-between;
+display: none;
 
 @include respond(tab-land){
   margin-left: 2rem;
