@@ -4,7 +4,7 @@
 position: fixed;
 top: 0;
 left: 0;
-background-color:red;
+background-color:$color-white;
 opacity: 0;
 visibility: hidden;
 transition: all .3s;
@@ -16,8 +16,11 @@ transition: all .3s;
 @media only screen and (min-width:600px){
   display: none;
 }
+
+
 }
 
 .popup-nav-link{
-  margin-top: .8rem;
-}
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+  padding-left: 4rem;}

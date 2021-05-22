@@ -439,6 +439,7 @@ body {
 .project-heading-1 {
   font-size: 3.6rem;
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .project-color {
@@ -740,6 +741,54 @@ body {
   color: black !important;
 }
 
+.popup-bottom {
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 5%;
+  height: 13rem;
+  width: 85%;
+  background-image: linear-gradient(to right, #fff, #82c076, #2ab1db);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .popup-bottom {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    height: 20rem;
+  }
+}
+
+.popup-bottom-left {
+  display: flex;
+}
+
+.popup-bottom-left-img {
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem 3rem;
+}
+
+.popup-bottom-left-content {
+  margin: 2rem 2rem;
+  line-height: 1.7;
+}
+
+.popup-bottom-right {
+  color: #fff;
+  margin: 5rem 3rem;
+  text-align: right;
+}
+
+.pricing-end {
+  text-decoration: none;
+  color: black;
+}
+
 .popup {
   height: 100vh;
   width: 100%;
@@ -779,6 +828,12 @@ body {
   display: inline-block;
 }
 
+.popup-close:link, .popup-close:visited {
+  position: absolute;
+  top: 1rem;
+  right: 6rem;
+}
+
 .popup-head {
   font-weight: 300;
   padding-left: 0rem;
@@ -815,7 +870,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: #fff;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
@@ -833,12 +888,14 @@ body {
 }
 
 .popup-nav-link {
-  margin-top: .8rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+  padding-left: 4rem;
 }
 
 .footer {
+  margin-top: 5%;
   overflow: hidden;
-  display: none;
 }
 
 .footer-part {
@@ -847,12 +904,6 @@ body {
   padding: 5rem;
   text-align: center;
   margin-left: 3rem;
-}
-
-@media only screen and (max-width: 75em) {
-  .footer-part {
-    margin-left: 5rem;
-  }
 }
 
 .footer-whatsapp-img {
@@ -864,14 +915,9 @@ body {
 .footer-telegram-img {
   height: 8rem;
   width: 8rem;
-  margin-left: 60rem;
-  margin-top: 5rem;
-}
-
-@media only screen and (max-width: 75em) {
-  .footer-telegram-img {
-    margin-left: 40rem;
-  }
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .footer-end {
@@ -881,12 +927,6 @@ body {
   margin: 0;
   text-align: center;
   line-height: 2.5;
-}
-
-@media only screen and (max-width: 75em) {
-  .footer-end {
-    width: 120%;
-  }
 }
 
 .footer-copyright {
@@ -911,15 +951,8 @@ body {
 }
 
 .community {
-  margin-left: 57rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-@media only screen and (max-width: 75em) {
-  .community {
-    margin-left: 40rem;
-  }
+  text-align: center;
+  margin: 2rem;
 }
 
 .community-img-1 {

@@ -177,3 +177,53 @@ font-weight: 500;
     color: black !important;
   }
 }
+
+
+.popup-bottom{
+  margin-right: $margin-right-body;
+  margin-left: $margin-left-body;
+  margin-top: $margin-top-body;
+  height: 13rem;
+  width: 85%;
+  
+  background-image: linear-gradient(to right,
+  #fff,$color-primary,$color-secondary);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(phone){
+    display: flex;
+   // flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+    height:20rem;
+    
+  }
+
+  &-left{
+  display: flex;
+
+  &-img{
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem 3rem;
+  }
+  &-content{
+    margin: 2rem 2rem;
+    line-height: 1.7;
+  }
+}
+&-right{
+  color:$color-white;
+   margin: 5rem 3rem;
+   text-align: right;
+}
+
+  }
+
+  .pricing-end{
+text-decoration: none;
+color: black;
+}
