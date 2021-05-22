@@ -538,6 +538,7 @@ body {
     text-align: center;
     padding: 3rem;
     animation: moveInRight 3s;
+    width: 100%;
   }
 }
 
@@ -553,6 +554,7 @@ body {
     text-align: center;
     padding: 3rem;
     animation: moveInLeft 3s;
+    width: 100%;
   }
 }
 
@@ -745,7 +747,6 @@ body {
   margin-right: 7%;
   margin-left: 7%;
   margin-top: 5%;
-  height: 13rem;
   width: 85%;
   background-image: linear-gradient(to right, #fff, #82c076, #2ab1db);
   border-radius: 2rem;
@@ -757,9 +758,8 @@ body {
 @media only screen and (max-width: 37.5em) {
   .popup-bottom {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     color: black;
-    height: 20rem;
   }
 }
 
@@ -775,13 +775,22 @@ body {
 
 .popup-bottom-left-content {
   margin: 2rem 2rem;
-  line-height: 1.7;
+  line-height: 1.5;
+  flex-basis: 80%;
 }
 
 .popup-bottom-right {
   color: #fff;
   margin: 5rem 3rem;
   text-align: right;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .popup-bottom-right {
+    flex-basis: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
 }
 
 .pricing-end {

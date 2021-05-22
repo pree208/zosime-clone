@@ -183,7 +183,7 @@ font-weight: 500;
   margin-right: $margin-right-body;
   margin-left: $margin-left-body;
   margin-top: $margin-top-body;
-  height: 13rem;
+  //height: 13rem;
   width: 85%;
   
   background-image: linear-gradient(to right,
@@ -195,15 +195,20 @@ font-weight: 500;
 
   @include respond(phone){
     display: flex;
-   // flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column;
+
+    //flex-basis: 100%;
+    //text-align: center;
+    
+    //justify-content: flex-start;
     color: black;
-    height:20rem;
+    //height:20rem;
     
   }
 
   &-left{
   display: flex;
+  
 
   &-img{
     height: 10rem;
@@ -212,13 +217,24 @@ font-weight: 500;
   }
   &-content{
     margin: 2rem 2rem;
-    line-height: 1.7;
+    line-height: 1.5;
+    flex-basis: 80%;
+    
   }
 }
 &-right{
   color:$color-white;
    margin: 5rem 3rem;
    text-align: right;
+
+
+   @include respond(phone){
+     flex-basis: 100%;
+   // margin-bottom: 10rem;
+    margin-top: 0;
+    text-align: center;
+   // margin-right: 25rem;
+   }
 }
 
   }
