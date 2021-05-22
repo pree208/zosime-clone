@@ -791,7 +791,7 @@ body {
 
 .popup {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -844,7 +844,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 60vw;
   background-color: #148786;
   border-radius: 3px;
   height: 45rem;
@@ -852,6 +852,32 @@ body {
   color: #fff;
   padding: 10rem 5rem;
   padding-left: 8rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .popup-content {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .popup-content {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .popup-content {
+    width: 85vw;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .popup-content {
+    width: 85vw;
+    height: 120vh;
+  }
 }
 
 .popup-text1 {
